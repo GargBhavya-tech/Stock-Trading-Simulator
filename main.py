@@ -241,12 +241,12 @@ def buy_stock(users, username):
         print(f" You need Rs.{total_cost:,.2f} but only have Rs.{user['cash']:,.2f}")
         return users
     
-    # # Confirm purchase
-    # confirm = input("\n Do you want to proceed? (yes/no): ").strip().lower()
+    # Confirm purchase
+    confirm = input("\n Do you want to proceed? (yes/no): ").strip().lower()
     
-    # if confirm != 'yes':
-    #     print(" Purchase cancelled.")
-    #     return users
+    if confirm != 'yes':
+        print(" Purchase cancelled.")
+        return users
     
     # Process the purchase
     user['cash'] -= total_cost
@@ -307,9 +307,9 @@ def sell_stock(users, username):
     # Get current price
     current_price = get_current_price(symbol)
     
-    # if not current_price:
-    #     print(f"\n Couldn't get current price for {symbol}")
-    #     return users
+    if not current_price:
+        print(f"\n Couldn't get current price for {symbol}")
+        return users
     
     print(f" Current price: Rs.{current_price:.2f}")
     
