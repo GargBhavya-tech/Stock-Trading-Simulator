@@ -1,0 +1,2 @@
+# Stock-Trading-Simulator
+ddjncnj
