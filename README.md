@@ -2,6 +2,14 @@
 
 A simple command-line stock trading simulator built with Python that allows users to practice trading stocks with virtual money.
 
+## Team
+
+**Team Name**: Let Us Python
+
+**Team Members**:
+- Bhavya Garg
+- Harshit Khattar
+
 ## Features
 
 - **User Account Management**: Create and login to your personal trading account
