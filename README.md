@@ -47,7 +47,7 @@ pip install yfinance
 
 2. Run the program:
 ```bash
-python stock_trading_simulator.py
+python main.py
 ```
 
 ## How to Use
