@@ -197,8 +197,6 @@ def buy_stock(users, username):
     
     if not symbol:
         print(" Please enter a valid stock symbol!")
-        #if the symbol is not in library
-        #all these symbols are used from the yfinance library
         return users
     
     print(f"\n Looking up {symbol}...")
@@ -207,11 +205,10 @@ def buy_stock(users, username):
     #from the yfinance library
     current_price = get_current_price(symbol)
     
-    # if not current_price:
-    #     print(f"\n Couldn't find stock data for {symbol}")
-    #     #if the stock isnt having price in the library
-    #     print(" Make sure the symbol is correct and try again!")
-    #     return users
+    if not current_price:
+        print(f"\n Couldn't find stock data for {symbol}")
+        print(" Make sure the symbol is correct and try again!")
+        return users
     
     print(f" Current price of {symbol}: Rs.{current_price:.2f}")
     
